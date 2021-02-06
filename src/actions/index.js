@@ -26,7 +26,7 @@ export const ADD_ERROR = 'ADD_ERROR'
 
 export const addSmurf = (name, nickname, position, description) => (dispatch) => {
     if (name == "" || nickname == "" || position == "") {
-        dispatch({type: ADD_SMURFS_FAIL, payload: "name, nickname, and postion required"})
+        dispatch({type: ADD_SMURFS_FAIL, payload: "name, nickname, and position required"})
     }
     else {
         dispatch({type: ADD_SMURFS_START})
